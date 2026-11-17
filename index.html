@@ -1,53 +1,960 @@
-<!doctype html>
-<html lang="kk">
+<!DOCTYPE html>
+<html lang="kk" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#080c19"><meta name="description" content="11-апта: синтетикалық медиа және генеративті жасанды интеллект. Қазақ тіліндегі интерактивті дәріс, TTS зертханасы, цифрлық аватар және практикум. Орындаған Абдилла Қызжібек.">
-  <title>QYZHIBEK · Синтетикалық медиа және генеративті ЖИ</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script src="content.js" defer></script><script src="app.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-апта: Синтетикалық медиа және генеративті ЖИ</title>
+    <meta name="description" content="Синтетикалық медиа және генеративті ЖИ: 7 бөлімдік дәріс, TTS, цифрлық аватар, медиасауаттылық және практикум. Орындаған Абдилла Қызжібек.">
+    <meta name="theme-color" content="#090d16">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="assets/tailwind.css">
+    <!-- Google Fonts: Inter -->
+    <link rel="stylesheet" href="assets/fonts.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    
+    
+
+    <link rel="stylesheet" href="assets/site.css">
 </head>
-<body>
-<a class="skip" href="#main">Мазмұнға өту</a>
-<div class="reading-progress" aria-hidden="true"><i></i></div>
-<header class="header">
- <a class="brand" href="#home" aria-label="Qyzhibek — басты бет"><span class="brand-mark">Q<span>✦</span></span><span>QYZHIBEK<small>digital learning</small></span></a>
- <nav id="nav" aria-label="Негізгі мәзір"><a href="#home" class="active">Басты бет</a><a href="#lecture">Дәріс</a><a href="#tts">TTS</a><a href="#avatar">Аватар</a><a href="#deepfake">Deepfake</a><a href="#literacy">Медиасауат</a><a href="#practice">Практикум <span>↗</span></a></nav>
- <button class="menu-toggle" aria-label="Мәзірді ашу" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
-</header>
-<main id="main">
-<section class="hero section" id="home">
- <div class="hero-grid"></div>
- <div class="hero-copy"><div class="eyebrow"><i></i> ИНФОРМАТИКА <span>/</span> 11-АПТА</div>
- <h1>Шындықтың<br>жаңа <span class="gradient-text">өлшемі.</span></h1>
- <h2>Синтетикалық медиа<br>және генеративті ЖИ</h2>
- <p>Мәтіннен дауысқа. Идеядан цифрлық бейнеге.<br>Жасанды интеллект әлемін зерттеп, медианы<br class="desktop"> саналы түрде жасауды үйреніңіз.</p>
- <div class="hero-actions"><a class="button primary" href="#lecture">Зерттеуді бастау <span>↗</span></a><a class="text-link" href="#tts"><span class="play-icon">▶</span> Тәжірибе жасап көріңіз</a></div>
- <div class="hero-meta"><span><b>07</b> теориялық бөлім</span><span><b>04</b> практикалық тапсырма</span><span class="online"><i></i> Интерактивті сабақ</span></div></div>
- <div class="hero-art" aria-label="Генеративті интеллектіні бейнелейтін анимациялық бөлшектер сферасы" role="img"><canvas id="orb" aria-hidden="true"></canvas><div class="orb-ring ring-one"></div><div class="orb-ring ring-two"></div><div class="orb-label label-top"><span class="mini-icon">✧</span><div>Генеративті ЖИ<small>Идея → жаңа мазмұн</small></div><i></i></div><div class="orb-label label-bottom"><span class="wave-mini">▂▆▃▇▅▂</span><div>Мәтіннен дауысқа<small>Синтез. Шығармашылық. Мүмкіндік.</small></div></div><span class="art-coordinate">NEURAL SPACE / 11.0</span><span class="art-caption">Болашақ — қазірдің өзінде осында</span></div>
- <a href="#overview" class="scroll-hint"><span>↓</span> ТӨМЕН ЖЫЛЖЫҢЫЗ</a>
-</section>
-<section class="overview section" id="overview"><div class="section-kicker">ТҮСІНУДЕН — ҚОЛДАНУҒА</div><div class="overview-top"><h2>Бір сабақ.<br><span class="muted">Жаңа мүмкіндіктер әлемі.</span></h2><p>Технологияның қалай жұмыс істейтінін түсініңіз,<br>өз тәжірибеңізді жасаңыз және ақпаратқа<br>сыни көзқараспен қарауды үйреніңіз.</p></div><div class="overview-cards">
- <a href="#lecture" class="overview-card"><div class="tile-icon violet">✧</div><span class="card-num">01 / ТҮСІНУ</span><h3>ЖИ қалай жасайды?</h3><p>Генеративті модельдердің негізі мен синтетикалық медианың түрлерін зерттеңіз.</p><span class="card-arrow">↗</span></a>
- <a href="#tts" class="overview-card"><div class="tile-icon cyan">≋</div><span class="card-num">02 / ТӘЖІРИБЕ</span><h3>Идеяны іске асырыңыз</h3><p>Мәтінді дыбыстаңыз, цифрлық аватарды зерттеңіз және интерактивтерді қолданып көріңіз.</p><span class="card-arrow">↗</span></a>
- <a href="#literacy" class="overview-card"><div class="tile-icon pink">⌘</div><span class="card-num">03 / САНАЛЫ ТАҢДАУ</span><h3>Сеніңіз. Бірақ тексеріңіз.</h3><p>Deepfake тәуекелдерін танып, ақпаратты дәлелге сүйеніп бағалауды үйреніңіз.</p><span class="card-arrow">↗</span></a>
-</div></section>
-<section class="section lecture-section" id="lecture"><div class="section-heading"><div><div class="section-kicker">01 — ДӘРІС МАЗМҰНЫ</div><h2>Білімнің <span class="gradient-text">жеті қадамы.</span></h2></div><span class="section-note">Негізгі ұғымдардан жауапты қолдануға дейін</span></div>
- <div class="lecture-layout"><aside class="course-card"><span class="tag">11-АПТА / ОҚУ МОДУЛІ</span><div class="course-symbol">✳</div><h3>Түсіну.<br>Зерттеу.<br>Жасау.</h3><p>Әр бөлімді оқып, негізгі ұғымдар мен мысалдарды талдаңыз.</p><div class="course-progress"><span>Сіздің ілгерілеуіңіз</span><b id="read-count">0 / 7</b></div><div class="meter"><i id="read-meter"></i></div><small>Белгіленген бөлімдер осы браузерде сақталады.</small><button class="button subtle" id="print-lecture">Дәрісті басып шығару ↗</button></aside><div id="lecture-list" class="lecture-list"></div></div>
-</section>
-<section class="section lab-section" id="tts"><div class="section-heading"><div><div class="section-kicker">02 — TTS ЗЕРТХАНАСЫ</div><h2>Мәтінге <span class="gradient-text">дауыс беріңіз.</span></h2></div><span class="tag cyan-tag">TEXT → SPEECH</span></div>
- <div class="lab-grid"><div class="lab-info"><h3>Әр сөз естілуге лайық.</h3><p>Text-to-Speech — жазылған мәтінді синтетикалық сөйлеуге айналдыру технологиясы. Ол аудиокітап, навигация, қолжетімді білім беру және виртуалды көмекшілерде қолданылады.</p><ol class="pipeline"><li><span>01</span><div><b>Мәтінді өңдеу</b><p>Сандар, қысқартулар және сөйлемдер талданады.</p></div></li><li><span>02</span><div><b>Айтылымды модельдеу</b><p>Дыбыстар, екпін, ырғақ пен интонация анықталады.</p></div></li><li><span>03</span><div><b>Дыбысты синтездеу</b><p>Модель тыңдауға болатын аудиосигнал жасайды.</p></div></li></ol><div class="info-note"><span>i</span><p>Бұл тәжірибе құрылғыңыздың дыбыстау қызметін қолданады. Қазақша дауыс бар болса, автоматты таңдалады. Дауыс қолжетімділігі браузер мен операциялық жүйеге байланысты.</p></div></div>
- <div class="tts-panel panel"><div class="panel-top"><span><i class="status-dot"></i> ДАУЫС СТУДИЯСЫ</span><span class="tiny">БРАУЗЕРДЕГІ ДЕМО</span></div><label for="tts-text">Дыбысталатын мәтін</label><textarea id="tts-text" maxlength="1200">Сәлем! Мен жасанды интеллект көмегімен жасалған дауыспын. Синтетикалық медиа жаңа мүмкіндіктерге жол ашады. Технологияны жауапкершілікпен қолданайық!</textarea><div class="text-meta"><button id="sample-text" class="plain-btn">↻ Үлгі мәтін</button><span id="char-count">0 / 1200</span></div><label for="voice-select">Құрылғыдағы дауысты таңдаңыз</label><select id="voice-select"><option>Дауыстар жүктелуде…</option></select><p class="voice-note" id="voice-note" aria-live="polite"></p><div class="range-label"><label for="speech-rate">Сөйлеу жылдамдығы</label><output id="rate-value" for="speech-rate">1.0×</output></div><input id="speech-rate" type="range" min="0.5" max="1.5" step="0.1" value="1"><div class="waveform" id="waveform" aria-hidden="true"></div><div class="tts-actions"><button class="button primary" id="speak">▶ Тыңдау</button><button class="button subtle" id="stop-speech" disabled>■ Тоқтату</button></div><p id="tts-status" class="status-text" aria-live="polite">Мәтінді өңдеп, «Тыңдау» батырмасын басыңыз.</p></div></div>
-</section>
-<section class="section" id="avatar"><div class="section-heading"><div><div class="section-kicker">03 — ЦИФРЛЫҚ АВАТАР</div><h2>Цифрлық әлемдегі <span class="gradient-text">бейнеңіз.</span></h2></div><span class="section-note">Бейне + дауыс + қозғалыс</span></div><div class="avatar-layout"><div class="avatar-stage"><div class="stage-grid"></div><span class="tag stage-tag"><i class="status-dot"></i> ОҚУ СИМУЛЯЦИЯСЫ</span><div id="avatar-figure" class="avatar-figure" data-mood="friendly"><div class="avatar-halo"></div><div class="avatar-head"><div class="avatar-brow"></div><div class="avatar-eyes"><i></i><i></i></div><div class="avatar-mouth"></div></div><div class="avatar-neck"></div><div class="avatar-body"><span>✦</span></div><div class="avatar-orbit"></div></div><span class="avatar-id">Q / DIGITAL GUIDE</span><div class="avatar-message" id="avatar-message" aria-live="polite">Сәлем! Мен Q — оқу аватарымын. Төмендегі көңіл күйді немесе оң жақтағы кезеңдерді таңдап көріңіз.</div><div class="mood-picker" aria-label="Аватардың көңіл күйі"><button class="selected" data-mood="friendly" aria-pressed="true">Көңілді</button><button data-mood="thinking" aria-pressed="false">Ойлы</button><button data-mood="speaking" aria-pressed="false">Сөйлеп тұр</button></div></div><div class="avatar-explain"><h3>Аватар қалай жұмыс істейді?</h3><p>Цифрлық аватар — адамның немесе ойдан шығарылған кейіпкердің компьютерлік бейнесі. Ол 2D, 3D не бейнереалистік пішінде болуы мүмкін. Аватардың бәрі бірдей ЖИ арқылы жасалмайды.</p><div class="avatar-steps" id="avatar-steps"><button data-step="0" class="selected"><span>01</span><b>Сценарий</b><span>↗</span></button><button data-step="1"><span>02</span><b>Дауыс</b><span>↗</span></button><button data-step="2"><span>03</span><b>Қимыл және ерін синхроны</b><span>↗</span></button><button data-step="3"><span>04</span><b>Дайын цифрлық кейіпкер</b><span>↗</span></button></div><div class="step-detail" id="step-detail" aria-live="polite"></div><p class="micro-copy">Мұндағы кейіпкер — алдын ала жазылған жауаптары бар анимациялық оқу үлгісі.</p></div></div></section>
-<section class="section deepfake-section" id="deepfake"><div class="section-heading"><div><div class="section-kicker">04 — DEEPFAKE</div><h2>Көргеніңіздің бәрі <span class="gradient-text">шындық па?</span></h2></div></div><div class="deepfake-grid"><div><p class="large-copy">Deepfake — терең оқыту әдістерімен адамның бейнесін не дауысын синтездеу немесе өзгерту. Нәтиже шынайы жазбаға ұқсауы мүмкін.</p><div class="compare-demo"><div class="compare-scene original"><div class="portrait"><div class="portrait-hair"></div><div class="portrait-face"><i></i><i></i><b></b></div><div class="portrait-shirt"></div></div><span class="compare-label">БАСТАПҚЫ ҮЛГІ</span></div><div class="compare-scene altered" id="altered-scene"><div class="portrait"><div class="portrait-hair"></div><div class="portrait-face"><i></i><i></i><b></b></div><div class="portrait-shirt"></div></div><div class="face-mesh"></div><span class="compare-label">ӨЗГЕРТІЛГЕН ҮЛГІ</span></div><div class="compare-divider" id="compare-divider"><span>↔</span></div></div><label class="comparison-label" for="compare-range">Шекараны жылжытып, екі үлгіні салыстырыңыз</label><input id="compare-range" type="range" min="0" max="100" value="50" aria-label="Бастапқы және өзгертілген үлгіні салыстыру"><p class="micro-copy">Сызбалық иллюстрация. Бұл нақты deepfake бейнесі немесе оны анықтайтын құрал емес.</p></div><div class="deepfake-content"><div class="segmented" aria-label="Deepfake қолданылуы"><button class="selected" id="benefits-tab" aria-pressed="true">Мүмкіндіктері</button><button id="risks-tab" aria-pressed="false">Қауіптері</button></div><div id="deepfake-details"></div><div class="important-note"><span>!</span><div><h4>Бір белгі — дәлел емес.</h4><p>Еріннің сәйкес келмеуі не көлеңкенің бұзылуы тек тексеруге себеп болады. Мінсіз бейне де синтетикалық болуы мүмкін. Дереккөз бен контексті бірге тексеріңіз.</p></div></div></div></div></section>
-<section class="section" id="literacy"><div class="section-heading"><div><div class="section-kicker">05 — МЕДИАСАУАТТЫЛЫҚ</div><h2>Бөліспес бұрын <span class="gradient-text">тексеріңіз.</span></h2></div><span class="section-note">Ақпаратты бағалаудың 5 қадамы</span></div><div class="literacy-grid"><div><div class="checklist" id="checklist"></div><div class="check-result" id="check-result" aria-live="polite">0 / 5 қадам орындалды. Тексеруді бірінші қадамнан бастаңыз.</div><button class="plain-btn" id="reset-checklist">↻ Қадамдарды тазарту</button></div><aside class="case-card"><span class="tag">МИНИ-КЕЙС / ӨЗІҢІЗДІ СЫНАП КӨРІҢІЗ</span><div class="case-icon">“</div><h3>«Ертең университетте<br>сабақ болмайды!»</h3><p>Бұл хабарлама белгісіз аккаунттан келді. Видеода ректорға ұқсас адам сөйлеп тұр, бірақ ресми сайтта хабарландыру жоқ.</p><h4>Ең дұрыс алғашқы әрекет қандай?</h4><div id="case-options"><button data-correct="false">Видеоны топқа бірден жіберу <span>↗</span></button><button data-correct="true">Университеттің ресми арнасын тексеру <span>↗</span></button><button data-correct="false">Бет-бейнесіне қарап қана шешу <span>↗</span></button></div><p id="case-feedback" class="feedback" aria-live="polite"></p></aside></div></section>
-<section class="section practice-section" id="practice"><div class="section-heading"><div><div class="section-kicker">06 — ПРАКТИКУМ</div><h2>Біліміңізді <span class="gradient-text">әрекетке айналдырыңыз.</span></h2></div><span class="tag">ЖЕКЕ ЖӘНЕ ТОПТЫҚ ЖҰМЫС</span></div><div id="task-grid" class="task-grid"></div><div class="practice-bottom"><div><span id="task-count">0 / 4 тапсырма орындалды</span><p>Жауаптарыңызды файлға сақтап, оқытушыға тапсыра аласыз.</p></div><button id="download-work" class="button subtle">Жұмыс парағын жүктеу ↓</button></div>
- <div class="quiz panel"><div class="quiz-intro"><span class="section-kicker">БІЛІМДІ БЕКІТУ</span><h3>Шағын тест.<br>Үлкен түсінік.</h3><p>5 сұраққа жауап беріп, тақырыпты қаншалықты меңгергеніңізді біліңіз.</p><span class="quiz-counter" id="quiz-counter">01 / 05</span></div><div class="quiz-body" id="quiz-body"></div></div></section>
-<section class="section sources-section"><div class="section-kicker">ӘРІ ҚАРАЙ ЗЕРТТЕУ</div><h2>Білімге бастайтын дереккөздер.</h2><div class="sources"><a href="https://www.unesco.org/en/artificial-intelligence/recommendation-ethics" target="_blank" rel="noopener noreferrer"><span>01</span><div>UNESCO<small>Жасанды интеллект этикасы</small></div><b>↗</b></a><a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis" target="_blank" rel="noopener noreferrer"><span>02</span><div>MDN Web Docs<small>Браузердегі сөйлеу синтезі</small></div><b>↗</b></a><a href="https://c2pa.org/" target="_blank" rel="noopener noreferrer"><span>03</span><div>C2PA<small>Медианың шығу тегі мен өзгерістерін тіркеу</small></div><b>↗</b></a></div></section>
-</main>
-<footer class="footer"><div class="footer-top"><div><a class="brand" href="#home"><span class="brand-mark">Q<span>✦</span></span><span>QYZHIBEK<small>digital learning</small></span></a><p>Технологияны түсін.<br>Шығармашылықпен жаса. Саналы түрде қолдан.</p></div><div class="author"><span class="section-kicker">ОРЫНДАҒАН</span><h3>Абдилла Қызжібек</h3><p>Мамандығы: информатика пәнінің мұғалімі</p><a href="tel:+77001702327">+7 700 170 2327 <span>↗</span></a><a href="https://www.instagram.com/zhibek.abdullaevaaa?xtok=NnE1azFobm9rZDd3" target="_blank" rel="noopener noreferrer">@zhibek.abdullaevaaa <span>↗</span></a></div></div><div class="footer-bottom"><span>© 2026 QYZHIBEK. Білім мен шығармашылық кеңістігі.</span><span>11-апта · Синтетикалық медиа және генеративті ЖИ</span><a href="#home" aria-label="Жоғарыға оралу">↑</a></div></footer>
-<div id="toast" class="toast" role="status"></div>
-</body></html>
+<body class="antialiased selection:bg-neonPurple selection:text-white">
+
+    <!-- Toast Notification Container (Alert орнына) -->
+    <div id="toast-container" role="status" aria-live="polite" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+    <!-- Üstingi Navigatsiya (Sticky Header) -->
+    <header class="sticky top-0 z-40 glass border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <a href="#hero" class="flex items-center gap-3 group">
+                    <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-neonPurple to-neonCyan flex items-center justify-center text-white font-bold shadow-lg shadow-neonPurple/30 group-hover:scale-105 transition">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-neonCyan block">11-апта • Дәріс порталы</span>
+                        <span class="font-bold text-sm sm:text-base text-white tracking-tight">Синтетикалық Медиа & ЖИ</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-1">
+                    <a href="#hero" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">Басты бет</a>
+                    <a href="#lecture" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">Дәріс (7 бөлім)</a>
+                    <a href="#tts" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">TTS Синтез</a>
+                    <a href="#avatar" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">Цифрлық аватар</a>
+                    <a href="#deepfake" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">Deepfake</a>
+                    <a href="#literacy" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition">Медиасауаттылық</a>
+                    <a href="#practicum" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-neonCyan bg-neonCyan/10 border border-neonCyan/30 hover:bg-neonCyan/20 transition ml-1">Практикум</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" aria-label="Мәзірді ашу" aria-expanded="false" aria-controls="mobile-menu" class="lg:hidden p-2.5 rounded-xl bg-white/5 border border-white/10 text-slate-200 hover:text-white hover:bg-white/10 transition">
+                    <i class="fa-solid fa-bars text-lg" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden glass border-t border-white/10 px-4 pt-2 pb-4 space-y-1">
+            <a href="#hero" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-sm font-medium text-slate-200 hover:bg-white/10">1. Басты бет</a>
+            <a href="#lecture" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-sm font-medium text-slate-200 hover:bg-white/10">2. Дәріс мазмұны (7 бөлім)</a>
+            <a href="#tts" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-sm font-medium text-slate-200 hover:bg-white/10">3. TTS — Мәтінді сөйлеуге айналдыру</a>
+            <a href="#avatar" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-sm font-medium text-slate-200 hover:bg-white/10">4. Цифрлық аватар</a>
+            <a href="#deepfake" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-sm font-medium text-slate-200 hover:bg-white/10">5. Deepfake: мүмкіндіктер мен қауіптер</a>
+            <a href="#literacy" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-sm font-medium text-slate-200 hover:bg-white/10">6. Медиасауаттылық алгоритмі</a>
+            <a href="#practicum" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-sm font-medium text-neonCyan bg-neonCyan/10">7. Практикум тапсырмалары</a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24 pb-24">
+
+        <!-- ========================================================= -->
+        <!-- 1. БАСТЫ БЕТ (HERO SECTION) -->
+        <!-- ========================================================= -->
+        <section id="hero" class="pt-10 sm:pt-16">
+            <div class="glass rounded-3xl p-6 sm:p-10 lg:p-14 relative overflow-hidden border border-white/10">
+                <!-- Decorative background blurs -->
+                <div class="absolute -top-24 -right-24 w-72 h-72 bg-neonPurple/20 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-neonCyan/20 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neonPurple/15 border border-neonPurple/30 text-purple-300 text-xs sm:text-sm font-medium">
+                            <span class="w-2 h-2 rounded-full bg-neonCyan animate-ping"></span>
+                            Цифрлық медиа және жасанды интеллект курсы • 11-апта
+                        </div>
+
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white">
+                            11-апта: <span class="text-gradient">Синтетикалық медиа және генеративті ЖИ</span>
+                        </h1>
+
+                        <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                            Генеративті жасанды интеллекттің заманауи медиа кеңістікке трансформациялық әсерін зерттеу: нейрожелілер арқылы мәтін, шынайы дауыс, фотореалистік бейне және интерактивті цифрлық аватарларды жасау дәуірінің технологиялық негіздері мен этикалық шекаралары.
+                        </p>
+
+                        <div class="flex flex-wrap items-center gap-4 pt-2">
+                            <a href="#lecture" class="btn-neon px-6 py-3.5 rounded-xl font-semibold text-white inline-flex items-center gap-2.5 shadow-lg">
+                                <i class="fa-solid fa-play"></i>
+                                Дәрісті бастау
+                            </a>
+                            <a href="#practicum" class="px-6 py-3.5 rounded-xl font-semibold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/10 inline-flex items-center gap-2 transition">
+                                <i class="fa-solid fa-laptop-code text-neonCyan"></i>
+                                Практикумға өту
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Goal & Outcome Cards -->
+                    <div class="lg:col-span-5 space-y-4">
+                        <div class="glass rounded-2xl p-5 border-l-4 border-l-neonPurple glass-hover">
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-neonPurple/20 text-purple-300 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-white text-base">Сабақтың мақсаты</h3>
+                                    <p class="text-sm text-slate-300 mt-1 leading-relaxed">
+                                        Генеративті модельдердің (LLM, Diffusion, GAN) жұмыс істеу логикасын меңгеру және синтетикалық контентті жасау мен талдау дағдыларын қалыптастыру.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="glass rounded-2xl p-5 border-l-4 border-l-neonCyan glass-hover">
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-neonCyan/20 text-cyan-300 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-white text-base">Күтілетін нәтижелер</h3>
+                                    <ul class="text-sm text-slate-300 mt-1.5 space-y-1.5">
+                                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-neonCyan text-xs"></i> TTS және цифрлық аватар технологияларын қолдану;</li>
+                                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-neonCyan text-xs"></i> Deepfake қауіптерін бағалау және верификация жасау;</li>
+                                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-neonCyan text-xs"></i> Генеративті ЖИ құралдарына тиімді промпт құрастыру.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Stats -->
+                        <div class="grid grid-cols-3 gap-3">
+                            <div class="glass rounded-xl p-3 text-center">
+                                <div class="text-xl font-extrabold text-neonCyan">7</div>
+                                <div class="text-xs text-slate-400">Теориялық бөлім</div>
+                            </div>
+                            <div class="glass rounded-xl p-3 text-center">
+                                <div class="text-xl font-extrabold text-purple-400">4</div>
+                                <div class="text-xs text-slate-400">Интерактивті зертхана</div>
+                            </div>
+                            <div class="glass rounded-xl p-3 text-center">
+                                <div class="text-xl font-extrabold text-emerald-400">3</div>
+                                <div class="text-xs text-slate-400">Практикум деңгейі</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- 2. ДӘРІС МАЗМҰНЫ (7 БӨЛІМНІҢ ТОЛЫҚ ТЕОРИЯСЫ) -->
+        <!-- ========================================================= -->
+        <section id="lecture" class="scroll-mt-24 space-y-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                <div>
+                    <span class="text-neonCyan text-sm font-semibold uppercase tracking-wider">Теориялық база</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">Дәріс мазмұны: 7 негізгі бөлім</h2>
+                </div>
+                <p class="text-slate-400 text-sm max-w-md">
+                    Толық академиялық теорияны, негізгі терминдерді және практикалық мысалдарды көру үшін төмендегі бөлімдердің бірін таңдаңыз.
+                </p>
+            </div>
+
+            <!-- Interactive 7-Section Explorer -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                <!-- Left Tabs List (7 Modules) -->
+                <div class="lg:col-span-4 flex flex-row lg:flex-col gap-2.5 overflow-x-auto pb-2 lg:pb-0" id="lecture-tabs">
+                    <!-- Rendered via JS -->
+                </div>
+
+                <!-- Right Content Display Panel -->
+                <div class="lg:col-span-8 glass rounded-3xl p-6 sm:p-8 border border-white/10 min-h-[420px] flex flex-col justify-between" id="lecture-content-panel">
+                    <!-- Dynamic Theory Content -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- 3. TTS (TEXT-TO-SPEECH — МӘТІНДІ СӨЙЛЕУГЕ АЙНАЛДЫРУ) -->
+        <!-- ========================================================= -->
+        <section id="tts" class="scroll-mt-24 space-y-8">
+            <div>
+                <span class="text-purple-400 text-sm font-semibold uppercase tracking-wider">Аудио синтез зертханасы</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">TTS — Мәтінді сөйлеуге айналдыру технологиясы</h2>
+            </div>
+
+            <!-- Architecture Pipeline Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="glass rounded-2xl p-5 glass-hover border-t-2 border-t-neonPurple">
+                    <div class="w-9 h-9 rounded-lg bg-neonPurple/20 text-purple-300 flex items-center justify-center font-bold mb-3">01</div>
+                    <h3 class="font-bold text-white text-base">Мәтінді талдау және Фонемалар</h3>
+                    <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                        Жүйе сандар мен қысқартуларды қалыпқа келтіріп (Text Normalization), сөздерді ең кіші дыбыстық бірліктерге — <strong>фонемаларға</strong> және екпін белгілеріне бөледі.
+                    </p>
+                </div>
+
+                <div class="glass rounded-2xl p-5 glass-hover border-t-2 border-t-neonCyan">
+                    <div class="w-9 h-9 rounded-lg bg-neonCyan/20 text-cyan-300 flex items-center justify-center font-bold mb-3">02</div>
+                    <h3 class="font-bold text-white text-base">Акустикалық модельдер</h3>
+                    <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                        Transformer және Diffusion архитектуралары фонемалар тізбегін дыбыстың жиілігі мен ырғағын сипаттайтын <strong>Mel-спектрограммаға</strong> айналдырады.
+                    </p>
+                </div>
+
+                <div class="glass rounded-2xl p-5 glass-hover border-t-2 border-t-neonPurple">
+                    <div class="w-9 h-9 rounded-lg bg-neonPurple/20 text-purple-300 flex items-center justify-center font-bold mb-3">03</div>
+                    <h3 class="font-bold text-white text-base">Нейрондық Вокодерлер</h3>
+                    <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                        HiFi-GAN немесе WaveNet сияқты вокодерлер спектрограммадан адам құлағына табиғи естілетін үздіксіз <strong>аудио толқынды (waveform)</strong> синтездейді.
+                    </p>
+                </div>
+
+                <div class="glass rounded-2xl p-5 glass-hover border-t-2 border-t-neonCyan">
+                    <div class="w-9 h-9 rounded-lg bg-neonCyan/20 text-cyan-300 flex items-center justify-center font-bold mb-3">04</div>
+                    <h3 class="font-bold text-white text-base">Zero-Shot Voice Cloning</h3>
+                    <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                        Қосымша оқытусыз (Zero-shot), небәрі 3–5 секундтық эталондық аудио үлгісі арқылы кез келген диктордың тембрі мен эмоциясын көшіру технологиясы.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Interactive TTS Demo Simulator -->
+            <div class="glass rounded-3xl p-6 sm:p-8 border border-white/10">
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <!-- Controls & Input -->
+                    <div class="lg:w-7/12 space-y-5">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-microphone-lines text-neonCyan"></i>
+                                Интерактивті TTS Демо-симулятор
+                            </h3>
+                            <span id="tts-engine-badge" class="text-xs px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+                                Құрылғы дауыстары тексерілуде…
+                            </span>
+                        </div>
+
+                        <!-- Preset Sample Buttons -->
+                        <div class="space-y-2">
+                            <label class="text-xs font-medium text-slate-400">Дайын мысалдарды таңдаңыз:</label>
+                            <div class="flex flex-wrap gap-2">
+                                <button type="button" onclick="setTTSSample(0)" class="text-xs px-3 py-1.5 rounded-lg bg-white/5 hover:bg-neonPurple/20 border border-white/10 hover:border-neonPurple/40 text-slate-200 transition">
+                                    1. Жаңалықтар дикторы
+                                </button>
+                                <button type="button" onclick="setTTSSample(1)" class="text-xs px-3 py-1.5 rounded-lg bg-white/5 hover:bg-neonCyan/20 border border-white/10 hover:border-neonCyan/40 text-slate-200 transition">
+                                    2. Білім беру подкасты
+                                </button>
+                                <button type="button" onclick="setTTSSample(2)" class="text-xs px-3 py-1.5 rounded-lg bg-white/5 hover:bg-neonPurple/20 border border-white/10 hover:border-neonPurple/40 text-slate-200 transition">
+                                    3. AI Ассистент сәлемдесуі
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Textarea -->
+                        <div>
+                            <label for="tts-input" class="block text-xs font-medium text-slate-400 mb-1.5">Дыбысталатын қазақша мәтін:</label>
+                            <textarea id="tts-input" rows="3" class="w-full rounded-2xl bg-slate-950/70 border border-white/15 focus:border-neonCyan focus:outline-none p-4 text-sm text-white placeholder-slate-500" placeholder="Осында қазақша мәтін енгізіңіз...">Сәлеметсіздер ме! Бүгін біз генеративті жасанды интеллект және синтетикалық медиа технологияларының болашағын талқылаймыз.</textarea>
+                        </div>
+
+                        <p id="tts-voice-note" class="text-xs text-slate-400 leading-relaxed" aria-live="polite">Қазақша дауыс қолжетімділігі құрылғыға байланысты. Бұл демо адамның дауысын клондамайды.</p>
+                        <!-- Voice Parameters -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div>
+                                <label for="tts-style" class="block text-xs text-slate-400 mb-1">Дауыс мәнері (Тембр)</label>
+                                <select id="tts-style" class="w-full rounded-xl bg-slate-900 border border-white/15 px-3 py-2 text-xs sm:text-sm text-white focus:border-neonCyan focus:outline-none">
+                                    <option value="neutral">Академиялық (Бейтарап)</option>
+                                    <option value="energetic">Дикторлық (Жоғары ырғақ)</option>
+                                    <option value="deep">Салмақты (Төмен жиілік)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="tts-rate" class="block text-xs text-slate-400 mb-1">Сөйлеу жылдамдығы: <span id="rate-val" class="text-neonCyan font-semibold">1.0x</span></label>
+                                <input id="tts-rate" type="range" min="0.7" max="1.4" step="0.1" value="1.0" oninput="document.getElementById('rate-val').textContent = this.value + 'x'" class="w-full accent-neonCyan cursor-pointer mt-2">
+                            </div>
+                            <div>
+                                <label for="tts-pitch" class="block text-xs text-slate-400 mb-1">Дауыс биіктігі (Pitch): <span id="pitch-val" class="text-purple-400 font-semibold">1.0</span></label>
+                                <input id="tts-pitch" type="range" min="0.7" max="1.3" step="0.1" value="1.0" oninput="document.getElementById('pitch-val').textContent = this.value" class="w-full accent-neonPurple cursor-pointer mt-2">
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex flex-wrap items-center gap-3 pt-1">
+                            <button type="button" id="tts-play-btn" onclick="playTTS()" class="btn-neon px-5 py-2.5 rounded-xl text-sm font-semibold text-white inline-flex items-center gap-2">
+                                <i class="fa-solid fa-volume-high"></i>
+                                Дыбыстау (Play)
+                            </button>
+                            <button type="button" onclick="stopTTS()" class="px-4 py-2.5 rounded-xl text-sm font-medium bg-white/5 hover:bg-red-500/20 text-slate-300 hover:text-red-300 border border-white/10 transition inline-flex items-center gap-2">
+                                <i class="fa-solid fa-stop"></i>
+                                Тоқтату
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right Visualizer Panel -->
+                    <div class="lg:w-5/12 rounded-2xl bg-slate-950/80 border border-white/10 p-6 flex flex-col justify-between">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Акустикалық толқын (Waveform)</span>
+                            <span id="tts-status-text" aria-live="polite" class="text-xs text-neonCyan font-medium">Күту режимі</span>
+                        </div>
+
+                        <!-- Animated Waveform Bars -->
+                        <div id="waveform-container" class="my-8 h-20 flex items-center justify-center gap-1.5 px-2">
+                            <!-- 24 bars generated by JS -->
+                        </div>
+
+                        <!-- Phoneme Breakdown Preview -->
+                        <div class="space-y-2 border-t border-white/10 pt-4">
+                            <div class="text-xs text-slate-400 flex justify-between">
+                                <span>Дыбыс таңбаларының шартты үлгісі:</span>
+                                <span class="text-purple-400">Оқу иллюстрациясы</span>
+                            </div>
+                            <div id="phoneme-preview" class="text-xs font-mono text-cyan-300/90 bg-white/5 p-2.5 rounded-xl truncate">
+                                /s æ l e m e t s ɪ z d e r m e/ ...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- 4. ЦИФРЛЫҚ АВАТАР (ИНТЕРАКТИВТІ ТҮСІНДІРМЕ) -->
+        <!-- ========================================================= -->
+        <section id="avatar" class="scroll-mt-24 space-y-8">
+            <div>
+                <span class="text-neonCyan text-sm font-semibold uppercase tracking-wider">Визуалды генерация</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">Цифрлық аватарлар және нейро-анимация</h2>
+            </div>
+
+            <!-- Avatar Types & Pipeline -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div class="glass rounded-2xl p-5 glass-hover">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-xl bg-neonPurple/20 text-purple-300 flex items-center justify-center">
+                            <i class="fa-solid fa-user-astronaut"></i>
+                        </div>
+                        <h3 class="font-bold text-white">2D Talking Heads</h3>
+                    </div>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Бір ғана статикалық фотосурет пен аудио жол негізінде ерін қимылын (Lip-sync) және бас бұрылысын генерациялайтын модельдер (мысалы: SadTalker, LivePortrait, HeyGen).
+                    </p>
+                </div>
+
+                <div class="glass rounded-2xl p-5 glass-hover">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-xl bg-neonCyan/20 text-cyan-300 flex items-center justify-center">
+                            <i class="fa-solid fa-cube"></i>
+                        </div>
+                        <h3 class="font-bold text-white">3D Мета-адамдар (MetaHumans)</h3>
+                    </div>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Unreal Engine және NeRF/Gaussian Splatting негізінде жасалған, толық дене пластикасы, тері текстурасы және жарық шағылысуы бар жоғары полигонды цифрлық егіздер.
+                    </p>
+                </div>
+
+                <div class="glass rounded-2xl p-5 glass-hover">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-300 flex items-center justify-center">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3 class="font-bold text-white">Нақты уақыттағы AI-ассистент</h3>
+                    </div>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        LLM + TTS + Lip-sync конвейерін 500 мс-тан аз кідіріспен біріктіріп, пайдаланушымен тікелей бейне-диалог жүргізе алатын интерактивті виртуалды кеңесшілер.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Interactive Digital Avatar Studio -->
+            <div class="glass rounded-3xl p-6 sm:p-8 border border-white/10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <!-- Futuristic Animated SVG Avatar Stage -->
+                    <div class="lg:col-span-5 flex flex-col items-center justify-center bg-slate-950/80 rounded-2xl p-6 border border-white/10 relative overflow-hidden" id="avatar-stage">
+                        <div class="absolute top-3 left-3 flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+                            <span class="text-xs font-mono text-slate-400">AI-AVATAR • KZ-01</span>
+                        </div>
+
+                        <!-- Avatar Visual Container -->
+                        <div class="relative w-48 h-48 sm:w-56 sm:h-56 flex items-center justify-center my-2">
+                            <!-- Pulse Ring -->
+                            <div class="avatar-ring absolute inset-2 rounded-full border-2 border-neonCyan/50"></div>
+                            <div class="absolute inset-4 rounded-full bg-gradient-to-b from-neonPurple/30 to-neonCyan/20 blur-md"></div>
+                            
+                            <!-- Custom SVG Futuristic AI Avatar -->
+                            <svg viewBox="0 0 200 200" class="w-full h-full relative z-10 drop-shadow-[0_0_15px_rgba(6,182,212,0.4)]">
+                                <defs>
+                                    <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#8b5cf6" />
+                                        <stop offset="100%" stop-color="#06b6d4" />
+                                    </linearGradient>
+                                    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#1e293b" />
+                                        <stop offset="100%" stop-color="#0f172a" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Outer Halo -->
+                                <circle cx="100" cy="100" r="90" fill="none" stroke="url(#cyberGrad)" stroke-width="2" stroke-dasharray="10 6" />
+                                <!-- Shoulders -->
+                                <path d="M40 185 C45 150, 155 150, 160 185" fill="url(#cyberGrad)" opacity="0.85" />
+                                <!-- Neck -->
+                                <rect x="86" y="130" width="28" height="28" rx="8" fill="#1e293b" />
+                                <!-- Head Shape -->
+                                <rect x="56" y="42" width="88" height="98" rx="40" fill="url(#faceGrad)" stroke="url(#cyberGrad)" stroke-width="3" />
+                                <!-- Cyber Visor / Eyes -->
+                                <rect x="68" y="75" width="64" height="20" rx="10" fill="#090d16" stroke="#06b6d4" stroke-width="1.5" />
+                                <circle cx="84" cy="85" r="5" fill="#22d3ee">
+                                    <animate attributeName="opacity" values="1;0.3;1" dur="3.5s" repeatCount="indefinite" />
+                                </circle>
+                                <circle cx="116" cy="85" r="5" fill="#22d3ee">
+                                    <animate attributeName="opacity" values="1;0.3;1" dur="3.5s" repeatCount="indefinite" />
+                                </circle>
+                                <!-- Nose line -->
+                                <path d="M100 95 L97 108 L103 108" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round" />
+                                <!-- Animated Speaking Mouth -->
+                                <ellipse id="avatar-mouth" cx="100" cy="121" rx="14" ry="2.5" fill="#22d3ee" />
+                                <!-- Ear Tech Nodes -->
+                                <rect x="48" y="78" width="8" height="24" rx="4" fill="#8b5cf6" />
+                                <rect x="144" y="78" width="8" height="24" rx="4" fill="#8b5cf6" />
+                            </svg>
+                        </div>
+
+                        <div class="text-center mt-2">
+                            <span id="avatar-state-badge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-white/5 text-slate-300 border border-white/10">
+                                <i class="fa-solid fa-circle-dot text-neonCyan"></i>
+                                Сұрақ таңдауыңызды күтуде
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Questions & Avatar Response -->
+                    <div class="lg:col-span-7 space-y-5">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Аватарға сұрақ қойыңыз (Интерактивті диалог)</h3>
+                            <p class="text-sm text-slate-400 mt-1">Төмендегі тақырыптық сұрақтардың бірін басыңыз — цифрлық аватар жасалу кезеңдері мен технологиясын түсіндіріп береді:</p>
+                        </div>
+
+                        <!-- Question Chips -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                            <button type="button" onclick="askAvatar(0)" class="avatar-q-btn text-left p-3.5 rounded-xl bg-white/5 hover:bg-neonPurple/20 border border-white/10 hover:border-neonPurple/50 text-xs sm:text-sm font-medium text-slate-200 transition flex items-center justify-between gap-2">
+                                <span>1. Lip-sync (ерін синхронизациясы) қалай жұмыс істейді?</span>
+                                <i class="fa-solid fa-chevron-right text-neonCyan text-xs"></i>
+                            </button>
+                            <button type="button" onclick="askAvatar(1)" class="avatar-q-btn text-left p-3.5 rounded-xl bg-white/5 hover:bg-neonCyan/20 border border-white/10 hover:border-neonCyan/50 text-xs sm:text-sm font-medium text-slate-200 transition flex items-center justify-between gap-2">
+                                <span>2. Мимика мен ым-ишараны ЖИ қалай генерациялайды?</span>
+                                <i class="fa-solid fa-chevron-right text-neonCyan text-xs"></i>
+                            </button>
+                            <button type="button" onclick="askAvatar(2)" class="avatar-q-btn text-left p-3.5 rounded-xl bg-white/5 hover:bg-neonPurple/20 border border-white/10 hover:border-neonPurple/50 text-xs sm:text-sm font-medium text-slate-200 transition flex items-center justify-between gap-2">
+                                <span>3. Цифрлық аватар жасаудың 4 негізгі кезеңі қандай?</span>
+                                <i class="fa-solid fa-chevron-right text-neonCyan text-xs"></i>
+                            </button>
+                            <button type="button" onclick="askAvatar(3)" class="avatar-q-btn text-left p-3.5 rounded-xl bg-white/5 hover:bg-neonCyan/20 border border-white/10 hover:border-neonCyan/50 text-xs sm:text-sm font-medium text-slate-200 transition flex items-center justify-between gap-2">
+                                <span>4. Білім беру мен бизнесте аватарлар қайда қолданылады?</span>
+                                <i class="fa-solid fa-chevron-right text-neonCyan text-xs"></i>
+                            </button>
+                        </div>
+
+                        <!-- Avatar Speech Bubble Output -->
+                        <div class="rounded-2xl bg-gradient-to-br from-slate-900/90 to-slate-950/90 border border-neonCyan/30 p-5 relative">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-semibold text-neonCyan uppercase tracking-wider">Аватар жауабы:</span>
+                                <button type="button" onclick="speakAvatarResponse()" class="text-xs px-2.5 py-1 rounded-lg bg-neonCyan/15 text-cyan-300 hover:bg-neonCyan/25 transition inline-flex items-center gap-1.5">
+                                    <i class="fa-solid fa-volume-high"></i> Дауыстап оқу
+                                </button>
+                            </div>
+                            <p id="avatar-response-text" class="text-sm sm:text-base text-slate-200 leading-relaxed min-h-[84px]">
+                                Сәлем! Мен — 11-апта дәрісінің цифрлық AI-аватарымын. Жоғарыдағы сұрақтардың бірін таңдаңыз, мен сізге визуалды синтез, Lip-sync және мимика технологияларын егжей-тегжейлі түсіндіріп беремін.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- 5. DEEPFAKE (МҮМКІНДІКТЕРІ МЕН ҚАУІПТЕРІ) -->
+        <!-- ========================================================= -->
+        <section id="deepfake" class="scroll-mt-24 space-y-8">
+            <div>
+                <span class="text-purple-400 text-sm font-semibold uppercase tracking-wider">Терең синтез технологиясы</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">Deepfake: Технологиялық логикасы, мүмкіндіктері мен қауіптері</h2>
+            </div>
+
+            <!-- Technical Logic Banner (GAN & Autoencoders) -->
+            <div class="glass rounded-3xl p-6 sm:p-8 border border-white/10">
+                <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-network-wired text-neonPurple"></i>
+                    Deepfake қалай жұмыс істейді? (Autoencoders & GAN архитектурасы)
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+                    <div class="bg-slate-950/70 rounded-2xl p-4 border border-white/10">
+                        <div class="text-xs font-bold text-neonCyan uppercase mb-1">1-қадам: Encoder (Сығу)</div>
+                        <p class="text-sm text-slate-300">
+                            Автоэнкодер A және B тұлғаларының бет-әлпетіндегі ортақ белгілерді (көзқарас, мимика, жарық) ортақ латентті кеңістікке сығымдайды.
+                        </p>
+                    </div>
+                    <div class="bg-slate-950/70 rounded-2xl p-4 border border-white/10">
+                        <div class="text-xs font-bold text-purple-400 uppercase mb-1">2-қадам: Decoder Swap (Алмастыру)</div>
+                        <p class="text-sm text-slate-300">
+                            Адам А-ның мимикалық коды Адам В-ның декодеріне беріледі. Нәтижесінде Адам В дәл Адам А-ның қимылын қайталайды.
+                        </p>
+                    </div>
+                    <div class="bg-slate-950/70 rounded-2xl p-4 border border-white/10">
+                        <div class="text-xs font-bold text-emerald-400 uppercase mb-1">3-қадам: GAN Дискриминатор</div>
+                        <p class="text-sm text-slate-300">
+                            Генеративті бәсекелес желіде (GAN) «Дискриминатор» жасанды суретті шынайыдан ажыратуға тырысып, сурет сапасын мінсіз етеді.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Two-Column Interactive Comparison Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Positive Opportunities -->
+                <div class="glass rounded-3xl p-6 sm:p-8 border border-emerald-500/30 bg-emerald-950/10">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Позитивті мүмкіндіктер</h3>
+                            <p class="text-xs text-emerald-300">Креативті индустрия мен ғылымдағы пайдасы</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3.5">
+                        <div class="p-4 rounded-2xl bg-slate-950/60 border border-white/5 hover:border-emerald-500/40 transition">
+                            <h4 class="font-semibold text-emerald-300 text-sm flex items-center gap-2">
+                                <i class="fa-solid fa-film"></i> Киноиндустрия және VFX
+                            </h4>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-1">
+                                Актерлерді жасарту (de-aging), каскадерлердің бетін алмастыру және түсірілім кезінде өмірден өткен актерлердің рөлін аяқтау.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-950/60 border border-white/5 hover:border-emerald-500/40 transition">
+                            <h4 class="font-semibold text-emerald-300 text-sm flex items-center gap-2">
+                                <i class="fa-solid fa-language"></i> Көптілді дубляж және локализация
+                            </h4>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-1">
+                                Фильмдер мен онлайн курстарды қазақ тіліне аударғанда, спикердің өз дауыс тембрін сақтап, ерін қимылын қазақша сөздерге бейімдеу.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-950/60 border border-white/5 hover:border-emerald-500/40 transition">
+                            <h4 class="font-semibold text-emerald-300 text-sm flex items-center gap-2">
+                                <i class="fa-solid fa-landmark"></i> Тарихи тұлғаларды тірілту (Білім беру)
+                            </h4>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-1">
+                                Мұражайлар мен мектептерде Абай Құнанбайұлы, Ахмет Байтұрсынұлы сынды тұлғалардың цифрлық бейнесі арқылы интерактивті дәрістер өткізу.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-950/60 border border-white/5 hover:border-emerald-500/40 transition">
+                            <h4 class="font-semibold text-emerald-300 text-sm flex items-center gap-2">
+                                <i class="fa-solid fa-heart-pulse"></i> Медицина және оңалту
+                            </h4>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-1">
+                                Сөйлеу қабілетінен айырылған науқастарға ескі аудиожазбалары негізінде өз дауысын қайтару.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Risks & Threats -->
+                <div class="glass rounded-3xl p-6 sm:p-8 border border-rose-500/30 bg-rose-950/10">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Қауіптер мен тәуекелдер</h3>
+                            <p class="text-xs text-rose-300">Ақпараттық және киберқауіпсіздік сын-қатерлері</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3.5">
+                        <div class="p-4 rounded-2xl bg-slate-950/60 border border-white/5 hover:border-rose-500/40 transition">
+                            <h4 class="font-semibold text-rose-300 text-sm flex items-center gap-2">
+                                <i class="fa-solid fa-bullhorn"></i> Дезинформация және саяси манипуляция
+                            </h4>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-1">
+                                Мемлекет қайраткерлерінің атынан жалған мәлімдемелер таратып, қоғамдық пікірге және сайлау процестеріне іріткі салу.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-950/60 border border-white/5 hover:border-rose-500/40 transition">
+                            <h4 class="font-semibold text-rose-300 text-sm flex items-center gap-2">
+                                <i class="fa-solid fa-user-secret"></i> Қаржылық алаяқтық (Вишинг)
+                            </h4>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-1">
+                                Компания басшысының немесе жақын туысының дауысы мен бейнесін клондап, шұғыл ақша аударуды сұрайтын кибершабуылдар.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-950/60 border border-white/5 hover:border-rose-500/40 transition">
+                            <h4 class="font-semibold text-rose-300 text-sm flex items-center gap-2">
+                                <i class="fa-solid fa-shield-halved"></i> Биометриялық қауіпсіздікті бұзу
+                            </h4>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-1">
+                                Банктік қосымшалардағы FaceID және дауыстық сәйкестендіру (Voice Biometrics) жүйелерін айналып өту әрекеттері.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-950/60 border border-white/5 hover:border-rose-500/40 transition">
+                            <h4 class="font-semibold text-rose-300 text-sm flex items-center gap-2">
+                                <i class="fa-solid fa-scale-unbalanced"></i> Ар-намыс пен беделге нұқсан келтіру
+                            </h4>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-1">
+                                Адамның келісімінсіз оның бейнесін заңсыз немесе беделін түсіретін контексте қолдану (кибербуллинг).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- 6. МЕДИАСАУАТТЫЛЫҚ (АҚПАРАТТЫ ТЕКСЕРУ АЛГОРИТМІ) -->
+        <!-- ========================================================= -->
+        <section id="literacy" class="scroll-mt-24 space-y-8">
+            <div>
+                <span class="text-neonCyan text-sm font-semibold uppercase tracking-wider">Цифрлық гигиена және верификация</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">Медиасауаттылық: Синтетикалық контентті тексеру алгоритмі</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                <!-- 5-Step Interactive Verification Checklist (Left 6 Cols) -->
+                <div class="lg:col-span-6 glass rounded-3xl p-6 sm:p-8 border border-white/10 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-bold text-white">5 қадамдық тексеру чек-листі</h3>
+                            <span id="checklist-progress" class="text-xs font-bold px-3 py-1 rounded-full bg-neonCyan/20 text-neonCyan">0 / 5 тексерілді</span>
+                        </div>
+                        <p class="text-sm text-slate-400 mb-5">
+                            Күмәнді бейне немесе аудиожазбаны талдау кезінде төмендегі 5 белгіні ретімен тексеріп, белгілеңіз:
+                        </p>
+
+                        <div class="space-y-3" id="verification-checklist">
+                            <label class="flex items-start gap-3.5 p-3.5 rounded-2xl bg-slate-950/60 border border-white/10 hover:border-neonCyan/40 cursor-pointer transition">
+                                <input type="checkbox" onchange="updateChecklist()" class="mt-1 w-4 h-4 accent-neonCyan rounded cursor-pointer">
+                                <div>
+                                    <span class="font-semibold text-sm text-white block">1. Көз жыпылықтауы және көз қарашығы</span>
+                                    <span class="text-xs text-slate-400">Көздің тым сирек немесе табиғи емес ырғақпен жыпылықтауы, көз қарашығындағы жарық шағылысының екі көзде сәйкес келмеуі.</span>
+                                </div>
+                            </label>
+
+                            <label class="flex items-start gap-3.5 p-3.5 rounded-2xl bg-slate-950/60 border border-white/10 hover:border-neonCyan/40 cursor-pointer transition">
+                                <input type="checkbox" onchange="updateChecklist()" class="mt-1 w-4 h-4 accent-neonCyan rounded cursor-pointer">
+                                <div>
+                                    <span class="font-semibold text-sm text-white block">2. Бет контуры, тері және шаш шекарасы</span>
+                                    <span class="text-xs text-slate-400">Бас бұрылған сәтте бет жиегінің бұлдырауы, терінің тым тегіс («пластикалық») көрінуі немесе сырға/көзілдірік жиегінің жоғалып кетуі.</span>
+                                </div>
+                            </label>
+
+                            <label class="flex items-start gap-3.5 p-3.5 rounded-2xl bg-slate-950/60 border border-white/10 hover:border-neonCyan/40 cursor-pointer transition">
+                                <input type="checkbox" onchange="updateChecklist()" class="mt-1 w-4 h-4 accent-neonCyan rounded cursor-pointer">
+                                <div>
+                                    <span class="font-semibold text-sm text-white block">3. Жарық пен көлеңке сәйкессіздігі</span>
+                                    <span class="text-xs text-slate-400">Адам бетіне түскен жарық бағыты мен артқы фондағы нысандардың көлеңкесі бір-біріне қайшы келуі.</span>
+                                </div>
+                            </label>
+
+                            <label class="flex items-start gap-3.5 p-3.5 rounded-2xl bg-slate-950/60 border border-white/10 hover:border-neonCyan/40 cursor-pointer transition">
+                                <input type="checkbox" onchange="updateChecklist()" class="mt-1 w-4 h-4 accent-neonCyan rounded cursor-pointer">
+                                <div>
+                                    <span class="font-semibold text-sm text-white block">4. Дыбыс интонациясы және тыныс алу</span>
+                                    <span class="text-xs text-slate-400">Сөйлем соңындағы роботтық интонация, тыныс алу кідірістерінің болмауы немесе қазақ тіліндегі төл дыбыстардың бұрмалануы.</span>
+                                </div>
+                            </label>
+
+                            <label class="flex items-start gap-3.5 p-3.5 rounded-2xl bg-slate-950/60 border border-white/10 hover:border-neonCyan/40 cursor-pointer transition">
+                                <input type="checkbox" onchange="updateChecklist()" class="mt-1 w-4 h-4 accent-neonCyan rounded cursor-pointer">
+                                <div>
+                                    <span class="font-semibold text-sm text-white block">5. Түпнұсқа дереккөз және метадеректер</span>
+                                    <span class="text-xs text-slate-400">Ақпараттың ресми БАҚ-та расталуы, кері кескін іздеу (Reverse Image Search) және C2PA цифрлық таңбасының бар-жоғы.</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div id="checklist-verdict" class="mt-5 p-3.5 rounded-xl bg-white/5 border border-white/10 text-xs text-slate-300">
+                        Белгілерді дереккөз және контекстпен бірге бағалаңыз. Бұл чек-лист автоматты deepfake детекторы емес.
+                    </div>
+                </div>
+
+                <!-- Mini-Trainer: "Фейк пе, әлде шындық па?" (Right 6 Cols) -->
+                <div class="lg:col-span-6 glass rounded-3xl p-6 sm:p-8 border border-white/10 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold uppercase tracking-wider text-purple-400">Интерактивті тренажер</span>
+                            <span id="quiz-counter" class="text-xs font-semibold px-3 py-1 rounded-full bg-purple-500/20 text-purple-300">Кейс 1 / 4</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">«Фейк пе, әлде шындық па?» талдау тренажері</h3>
+                        <p class="text-xs text-slate-400 mb-5">Төмендегі оқу сценарийлері бойынша жауап таңдаңыз. Жауап кілті алдын ала берілген; нақты медианы тек сыртқы белгілермен сенімді анықтау мүмкін емес.</p>
+
+                        <!-- Case Card -->
+                        <div class="p-5 rounded-2xl bg-slate-950/80 border border-white/10 space-y-3" id="quiz-case-box">
+                            <div class="flex items-center gap-2 text-xs text-neonCyan font-semibold">
+                                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                                <span id="quiz-category">Бейне талдау кейсі</span>
+                            </div>
+                            <p id="quiz-scenario" class="text-sm sm:text-base text-slate-100 leading-relaxed font-medium">
+                                <!-- Dynamic scenario -->
+                            </p>
+                        </div>
+
+                        <!-- Choice Buttons -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5" id="quiz-options">
+                            <button type="button" onclick="answerQuiz(true)" class="p-3.5 rounded-xl bg-rose-500/15 hover:bg-rose-500/25 border border-rose-500/40 text-rose-200 font-semibold text-sm transition flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-robot"></i>
+                                Бұл ФЕЙК (Синтетикалық)
+                            </button>
+                            <button type="button" onclick="answerQuiz(false)" class="p-3.5 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/40 text-emerald-200 font-semibold text-sm transition flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-circle-check"></i>
+                                Бұл ШЫНДЫҚ (Түпнұсқа)
+                            </button>
+                        </div>
+
+                        <!-- Explanation Feedback Box -->
+                        <div id="quiz-feedback" class="hidden mt-4 p-4 rounded-2xl border text-sm leading-relaxed"></div>
+                    </div>
+
+                    <!-- Navigation & Score -->
+                    <div class="flex items-center justify-between pt-6 mt-6 border-t border-white/10">
+                        <div class="text-xs sm:text-sm text-slate-300">
+                            Ұпай: <span id="quiz-score" class="font-bold text-neonCyan">0</span> / 4
+                        </div>
+                        <div class="flex gap-2">
+                            <button type="button" onclick="resetQuiz()" class="px-3.5 py-2 rounded-xl text-xs font-medium bg-white/5 hover:bg-white/10 text-slate-300 transition">
+                                Қайта бастау
+                            </button>
+                            <button type="button" id="next-quiz-btn" onclick="nextQuiz()" class="px-4 py-2 rounded-xl text-xs font-semibold btn-neon text-white">
+                                Келесі кейс <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- 7. ПРАКТИКУМ (СТУДЕНТТЕРГЕ АРНАЛҒАН ТАПСЫРМАЛАР) -->
+        <!-- ========================================================= -->
+        <section id="practicum" class="scroll-mt-24 space-y-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                <div>
+                    <span class="text-purple-400 text-sm font-semibold uppercase tracking-wider">Зертханалық жұмыс</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">Практикум: 3 деңгейлі практикалық тапсырмалар</h2>
+                </div>
+                <button type="button" onclick="toggleRubricModal()" class="px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/15 text-xs sm:text-sm font-medium text-neonCyan inline-flex items-center gap-2 self-start md:self-auto transition">
+                    <i class="fa-solid fa-list-check"></i>
+                    Бағалау критерийлері (Рубрика)
+                </button>
+            </div>
+
+            <!-- 3 Difficulty Level Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <!-- Level 1: Basic -->
+                <div class="glass rounded-2xl p-6 border-t-4 border-t-emerald-400 flex flex-col justify-between glass-hover">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300">1-деңгей • Базалық</span>
+                            <span class="text-xs text-slate-400 font-semibold">30 балл</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Промпт-инжиниринг және кескін генерациясы</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed mb-4">
+                            Генеративті кескін модельдеріне (Midjourney, DALL-E 3, Flux) арналған құрылымдалған промпт жазыңыз. Промптта <strong>субъект, орта, жарық, стиль және камера ракурсы</strong> нақты сипатталуы тиіс.
+                        </p>
+                    </div>
+                    <button type="button" onclick="selectTaskLevel('Базалық деңгей: Промпт-инжиниринг')" class="w-full py-2.5 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/30 text-emerald-300 text-xs font-semibold transition">
+                        Осы тапсырманы таңдау
+                    </button>
+                </div>
+
+                <!-- Level 2: Intermediate -->
+                <div class="glass rounded-2xl p-6 border-t-4 border-t-neonCyan flex flex-col justify-between glass-hover">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-neonCyan/20 text-cyan-300">2-деңгей • Орта</span>
+                            <span class="text-xs text-slate-400 font-semibold">35 балл</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">TTS және Цифрлық аватар сценарийі</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed mb-4">
+                            Білім беру мақсатындағы 1 минуттық цифрлық аватар бейнеролигіне арналған дикторлық мәтін (TTS скрипті) құрастырыңыз. Кідірістерді, интонация екпінін және аватар мимикасын белгілеңіз.
+                        </p>
+                    </div>
+                    <button type="button" onclick="selectTaskLevel('Орта деңгей: TTS және Аватар сценарийі')" class="w-full py-2.5 rounded-xl bg-neonCyan/15 hover:bg-neonCyan/25 border border-neonCyan/30 text-cyan-300 text-xs font-semibold transition">
+                        Осы тапсырманы таңдау
+                    </button>
+                </div>
+
+                <!-- Level 3: Advanced -->
+                <div class="glass rounded-2xl p-6 border-t-4 border-t-neonPurple flex flex-col justify-between glass-hover">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-neonPurple/20 text-purple-300">3-деңгей • Күрделі</span>
+                            <span class="text-xs text-slate-400 font-semibold">35 балл</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Deepfake кейс-талдау және верификация есебі</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed mb-4">
+                            Әлеуметтік желіде таралған күмәнді медиа-материалға 5 қадамдық верификация алгоритмі бойынша сараптама жасаңыз. Визуалды/аудио артефактілерді және этикалық тәуекелдерді сипаттаңыз.
+                        </p>
+                    </div>
+                    <button type="button" onclick="selectTaskLevel('Күрделі деңгей: Deepfake кейс-талдау')" class="w-full py-2.5 rounded-xl bg-neonPurple/15 hover:bg-neonPurple/25 border border-neonPurple/30 text-purple-300 text-xs font-semibold transition">
+                        Осы тапсырманы таңдау
+                    </button>
+                </div>
+            </div>
+
+            <!-- Interactive Student Report Builder & Verification Form -->
+            <div class="glass rounded-3xl p-6 sm:p-8 border border-white/10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <!-- Form Inputs -->
+                    <div class="lg:col-span-6 space-y-4">
+                        <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-file-pen text-neonCyan"></i>
+                            Практикум есебін құрастыру және тексеру
+                        </h3>
+                        <p class="text-xs text-slate-400">
+                            Өз деректеріңіз бен орындаған тапсырмаңызды енгізіңіз. Жүйе құрылым толықтығын тексеріп, LMS/Platonus жүйесіне жүктеуге дайын есеп үлгісін жасайды.
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-xs text-slate-400 mb-1">Студенттің аты-жөні *</label>
+                                <input type="text" id="student-name" placeholder="Мысалы: Әлихан Нұрланұлы" class="w-full rounded-xl bg-slate-950/70 border border-white/15 px-3.5 py-2.5 text-sm text-white focus:border-neonCyan focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs text-slate-400 mb-1">Тобы / Мамандығы *</label>
+                                <input type="text" id="student-group" placeholder="Мысалы: ЖИ-241" class="w-full rounded-xl bg-slate-950/70 border border-white/15 px-3.5 py-2.5 text-sm text-white focus:border-neonCyan focus:outline-none">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs text-slate-400 mb-1">Таңдалған тапсырма деңгейі</label>
+                            <select id="task-level-select" class="w-full rounded-xl bg-slate-950/70 border border-white/15 px-3.5 py-2.5 text-sm text-white focus:border-neonCyan focus:outline-none">
+                                <option value="Базалық деңгей: Промпт-инжиниринг">Базалық деңгей: Промпт-инжиниринг</option>
+                                <option value="Орта деңгей: TTS және Аватар сценарийі">Орта деңгей: TTS және Аватар сценарийі</option>
+                                <option value="Күрделі деңгей: Deepfake кейс-талдау">Күрделі деңгей: Deepfake кейс-талдау</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs text-slate-400 mb-1">Орындалған жұмыс мәтіні (Промпт / Сценарий / Талдау) *</label>
+                            <textarea id="student-work" rows="4" placeholder="Тапсырма бойынша шешіміңізді осында жазыңыз..." class="w-full rounded-xl bg-slate-950/70 border border-white/15 p-3.5 text-sm text-white focus:border-neonCyan focus:outline-none"></textarea>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs text-slate-400 mb-1">Қорытынды және этикалық ескертпе *</label>
+                            <input type="text" id="student-conclusion" placeholder="Мысалы: Контент ЖИ көмегімен жасалғаны туралы таңбаланды..." class="w-full rounded-xl bg-slate-950/70 border border-white/15 px-3.5 py-2.5 text-sm text-white focus:border-neonCyan focus:outline-none">
+                        </div>
+
+                        <div class="flex flex-wrap gap-3 pt-1">
+                            <button type="button" onclick="generateStudentReport()" class="btn-neon px-5 py-2.5 rounded-xl text-sm font-semibold text-white inline-flex items-center gap-2">
+                                <i class="fa-solid fa-check-double"></i>
+                                Тексеру және үлгі құрастыру
+                            </button>
+                            <button type="button" onclick="fillDemoReport()" class="px-4 py-2.5 rounded-xl text-xs font-medium bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 transition">
+                                Дайын үлгімен толтыру
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Generated Preview & Copy Box -->
+                    <div class="lg:col-span-6 flex flex-col justify-between rounded-2xl bg-slate-950/85 border border-white/10 p-5">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-semibold uppercase tracking-wider text-neonCyan">Дайын есеп үлгісі (Preview)</span>
+                                <span id="report-quality-badge" class="text-xs px-2.5 py-0.5 rounded-full bg-white/10 text-slate-300">Күтілуде</span>
+                            </div>
+                            <pre id="report-output" class="whitespace-pre-wrap font-mono text-xs sm:text-sm text-slate-300 bg-black/40 p-4 rounded-xl border border-white/5 min-h-[250px] max-h-[320px] overflow-y-auto">Мұнда сіздің тексерілген практикум есебіңіздің дайын үлгісі пайда болады. Сол жақтағы өрістерді толтырып, «Тексеру және үлгі құрастыру» батырмасын басыңыз.</pre>
+                        </div>
+
+                        <div class="mt-4 flex items-center justify-between gap-3">
+                            <span class="text-xs text-slate-400">Мәтінді көшіріп, оқытушыға жіберіңіз</span>
+                            <button type="button" onclick="copyReportToClipboard()" class="px-4 py-2 rounded-xl bg-neonPurple/20 hover:bg-neonPurple/35 border border-neonPurple/40 text-purple-200 text-xs font-semibold inline-flex items-center gap-2 transition">
+                                <i class="fa-regular fa-copy"></i>
+                                Есепті көшіру
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 bg-slate-950/80 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 grid sm:grid-cols-2 gap-6">
+            <div><p class="text-xs font-semibold uppercase tracking-wider text-neonCyan mb-2">Орындаған</p><h2 class="text-2xl font-bold text-white">Абдилла Қызжібек</h2><p class="text-sm text-slate-400 mt-2">Мамандығы: информатика пәнінің мұғалімі</p></div>
+            <div class="flex flex-col sm:items-end justify-center gap-3 text-sm">
+                <a href="tel:+77001702327" class="text-slate-200 hover:text-neonCyan"><i class="fa-solid fa-phone mr-2" aria-hidden="true"></i>+7 700 170 2327</a>
+                <a href="https://www.instagram.com/zhibek.abdullaevaaa?xtok=NnE1azFobm9rZDd3" target="_blank" rel="noopener noreferrer" class="text-slate-200 hover:text-neonCyan"><i class="fa-brands fa-instagram mr-2" aria-hidden="true"></i>@zhibek.abdullaevaaa</a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-slate-400">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-brain text-neonCyan"></i>
+                <span>11-апта: «Синтетикалық медиа және генеративті ЖИ» интерактивті дәріс порталы</span>
+            </div>
+            <div>
+                Қазақ тіліндегі академиялық оқу модулі • 2026
+            </div>
+        </div>
+    </footer>
+
+    <!-- Evaluation Rubric Modal -->
+    <div id="rubric-modal" role="dialog" aria-modal="true" aria-label="Практикумды бағалау критерийлері" class="hidden fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="glass rounded-3xl max-w-2xl w-full p-6 sm:p-8 border border-white/15 relative space-y-5">
+            <div class="flex items-center justify-between">
+                <h3 class="text-xl font-bold text-white">Практикумды бағалау критерийлері (100 балл)</h3>
+                <button type="button" onclick="toggleRubricModal()" aria-label="Терезені жабу" class="w-9 h-9 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="space-y-3 text-sm">
+                <div class="p-3.5 rounded-xl bg-slate-950/70 border border-white/10 flex justify-between items-start gap-4">
+                    <div>
+                        <span class="font-bold text-emerald-300 block">1. Промпт құрылымы мен дәлдігі (30 балл)</span>
+                        <span class="text-xs text-slate-300">Контекст, стиль, формат және шектеулердің нақты берілуі.</span>
+                    </div>
+                    <span class="font-bold text-white shrink-0">30%</span>
+                </div>
+                <div class="p-3.5 rounded-xl bg-slate-950/70 border border-white/10 flex justify-between items-start gap-4">
+                    <div>
+                        <span class="font-bold text-neonCyan block">2. Медиа-сценарий және креативтілік (35 балл)</span>
+                        <span class="text-xs text-slate-300">TTS/Аватар мәтінінің табиғилығы, қазақ тілі нормаларының сақталуы.</span>
+                    </div>
+                    <span class="font-bold text-white shrink-0">35%</span>
+                </div>
+                <div class="p-3.5 rounded-xl bg-slate-950/70 border border-white/10 flex justify-between items-start gap-4">
+                    <div>
+                        <span class="font-bold text-purple-300 block">3. Сыни талдау және этикалық жауапкершілік (35 балл)</span>
+                        <span class="text-xs text-slate-300">Deepfake белгілерін дәл анықтау және авторлық құқық/таңбалау талаптарын ескеру.</span>
+                    </div>
+                    <span class="font-bold text-white shrink-0">35%</span>
+                </div>
+            </div>
+            <div class="flex justify-end">
+                <button type="button" onclick="toggleRubricModal()" class="btn-neon px-5 py-2.5 rounded-xl text-sm font-semibold text-white">Түсінікті</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Application Logic -->
+    <script src="assets/site.js"></script>
+</body>
+</html>
